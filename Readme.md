@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/WinExample/Form1.cs) (VB: [Form1.vb](./VB/WinExample/Form1.vb))
+<!-- default file list end -->
 # How to reuse XAF Audit Trail module functionality in a non-XAF WinForms application
 
 
