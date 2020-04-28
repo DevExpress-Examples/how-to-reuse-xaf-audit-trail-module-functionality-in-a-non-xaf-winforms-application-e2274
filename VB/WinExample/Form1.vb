@@ -11,11 +11,13 @@ Imports DevExpress.Persistent.AuditTrail
 Imports System.Reflection
 Imports System.Security.Principal
 Imports DevExpress.Persistent.BaseImpl
+Imports DevExpress.Xpo
 
 Namespace WinExample
 	Partial Public Class Form1
 		Inherits Form
 		Public Sub New()
+			XpoDefault.DataLayer = XpoDefault.GetDataLayer("XpoProvider=InMemoryDataStore", DB.AutoCreateOption.DatabaseAndSchema)
 			InitializeComponent()
 		End Sub
 		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load

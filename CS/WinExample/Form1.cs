@@ -10,10 +10,12 @@ using DevExpress.Persistent.AuditTrail;
 using System.Reflection;
 using System.Security.Principal;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Xpo;
 
 namespace WinExample {
     public partial class Form1 : Form {
         public Form1() {
+            XpoDefault.DataLayer = XpoDefault.GetDataLayer("XpoProvider=InMemoryDataStore", DevExpress.Xpo.DB.AutoCreateOption.DatabaseAndSchema);
             InitializeComponent();
         }
         private void Form1_Load(object sender, EventArgs e) {
